@@ -1266,6 +1266,10 @@ type ReplyKeyboardMarkup struct {
 	//
 	// optional
 	ResizeKeyboard bool `json:"resize_keyboard,omitempty"`
+	// Persistent Requests clients to always show the keyboard when the regular keyboard is hidden.
+	//
+	// optional
+	Persistent bool `json:"persistent,omitempty"`
 	// OneTimeKeyboard requests clients to hide the keyboard as soon as it's been used.
 	// The keyboard will still be available, but clients will automatically display
 	// the usual letter-keyboard in the chat – the user can press a special button
